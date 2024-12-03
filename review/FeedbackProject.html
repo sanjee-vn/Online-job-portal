@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="FeedbackProject.css">
+    <script src="FeedbackProject.js"></script>
+    <style>
+        
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="feedback-container">
+        <h2>Write Your Feedback</h2>
+        <form method="get" action="FeedbackProject.php">
+            <div class="form-group space ">
+                <label>Name</label><br>
+                <input type="text" placeholder="name" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label>Email</label><br>
+                <input type="email" placeholder="Email" id="email" name="email"  required>
+				<br>
+            </div>
+            <div class="form-group">
+                <label>write your comment</label><br>
+                <textarea placeholder="Comments" id="Comments" name="Comments"></textarea>
+            </div>
+            <div class="form-group">
+                <input type="file" id="attachment" class="file-input" name="attachment">
+                <label for="attachment" class="file-label">
+                    <span class="file-text">Attachment</span>
+                    <span class="file-button">Browse</span>
+                </label>
+            </div>
+            <div class="rating">
+                <h3>Rate Your Experience</h3>
+                <div class="stars">
+                    <input type="radio" id="star5" name="rating" value="5">
+                    <label for="star5">&#9733;</label>
+                    <input type="radio" id="star4" name="rating" value="4">
+                    <label for="star4">&#9733;</label>
+                    <input type="radio" id="star3" name="rating" value="3">
+                    <label for="star3">&#9733;</label>
+                    <input type="radio" id="star2" name="rating" value="2">
+                    <label for="star2">&#9733;</label>
+                    <input type="radio" id="star1" name="rating" value="1">
+                    <label for="star1">&#9733;</label>
+                </div>
+            </div>
+            <button type="submit" id="submit"  onclick="validateFrom()">Submit</button>
+        </form>
+    </div>
+<br>
+<br>
+<br>
+</body>
+</html>

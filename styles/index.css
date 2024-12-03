@@ -1,0 +1,92 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 50px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.why-choose {
+    margin-top: 50px;
+}
+
+.why-choose h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-around;
+}
+
+.option {
+    width: 30%;
+    text-align: center;
+    padding: 20px;
+}
+
+.option img {
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+.option h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.option p {
+    font-size: 1em;
+    color: #777;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .options {
+        flex-direction: column;
+    }
+
+    .option {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}

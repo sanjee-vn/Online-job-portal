@@ -1,0 +1,337 @@
+/* Styling the header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+/* Styling the logo */
+.logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Styling the navigation menu */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Styling the auth-links section */
+.auth-links {
+    position: relative;
+}
+
+/* Styling the dropdown button */
+.dropbtn {
+    background-color: #444;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Dropdown content links */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Style the dropdown button when hovered */
+.dropdown:hover .dropbtn {
+    background-color: #555;
+}
+
+
+body
+{
+
+    background-image: url(../images/images.jpeg);
+    background-size: cover;
+}
+#name
+{
+    align-items: left;
+    color: rgb(19, 19, 78);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+#SL
+{
+    color: rgb(19, 19, 78);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: oblique;
+}
+.line
+{
+    border: 1px solid black;
+}
+.nav1
+{
+    list-style-type: none;
+    background-color: #333;
+    overflow:hidden;
+    margin: 0%;
+    padding: 0%;
+}
+.abc
+{
+    float: left;
+    padding: 10px;
+}
+.nav2
+{
+    display: inline;
+    color: whitesmoke;
+    text-align: center;
+    padding: 50px 14px;
+    text-decoration: none;
+   
+}
+.nav3
+{
+    background-color: #333;
+    list-style: none;
+    overflow: hidden;
+    margin: 0%;
+    padding: 0%;
+}
+.efg
+{
+    float: left;
+    padding: 10px;
+}
+div.scroll-container {
+    background-color:transparent;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+  }
+  
+  div.scroll-container img {
+    padding: 10px;
+    width: 40%;
+    height: 40%;
+  }
+.nav4
+{
+    display: inline;
+    color: whitesmoke;
+    text-align: center;
+    padding: 50px 14px;
+    text-decoration: none;
+}
+.foot
+{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.Welcome
+{
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    color: aliceblue;
+}
+.message
+{
+    text-align: center;
+    font-size: medium;
+    color: white;
+}
+fieldset
+{
+    background-color: transparent;
+    backdrop-filter: blur(50px);
+    border-radius: 20px;
+    border-color:white;
+    padding: 50px;
+    margin: 20px;
+}
+legend
+{
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    color: rgb(3, 3, 3);
+}
+h2 , p {
+    color: rgb(0, 0, 0);
+}
+/*got a question part */
+.gotQ {
+    
+    padding: 20px;
+    border-radius: 8px;
+   
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.gotQ h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-items {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.contact-items .no,
+.contact-items .mail,
+.contact-items .place {
+    flex: 1;
+    padding: 20px;
+    margin: 0;
+}
+
+.contact-items .no {
+    text-align: left;
+}
+
+.contact-items .mail {
+    text-align: center;
+}
+
+.contact-items .place {
+    text-align: right;
+}
+
+/*button*/
+.button-container {
+    text-align: center; /* Center the button */
+    margin-top: 10px;  /* Add some space above the button */
+}
+
+button {
+    padding: 10px 20px; /* Add some padding to the button */
+    font-size: 16px;    /* Increase font size for better visibility */
+    cursor: pointer;    /* Change cursor to pointer on hover */
+    border-radius: 5px;     
+}
+
+/*footer*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Footer container styles */
+footer {
+    background-color: #2d2626;
+    color: #fff;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Footer section styles */
+.footer-section {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.footer-section ul {
+    list-style-type: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+.footer-section ul li a:hover {
+    color: #e2e2e2;
+    text-decoration: underline;
+}
+
+/* Social links section */
+.social-links li {
+    display: flex;
+    align-items: center;
+}
+
+.social-links li a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-links li a i {
+    font-size: 18px;
+}
+
+/* Footer bottom section */
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #444;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.footer-bottom p {
+    color: #fff;
+}

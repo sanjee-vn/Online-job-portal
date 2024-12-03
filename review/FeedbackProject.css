@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('feedback.jpg');
+    background-size: cover; 
+    background-position: center; 
+
+    
+}
+
+.feedback-container {
+    max-width: 500px;
+    margin: 100 auto;
+    padding: 20px;
+    border: 1px solid #5d5757;
+    border-radius: 5px;
+    margin-top: 100px; 
+    margin-left: 500px;
+    background-color: rgb(233, 233, 223); 
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.file-input {
+    display: none;
+}
+
+.file-label {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.file-text {
+    margin-right: 10px;
+}
+
+.rating {
+    margin-bottom: 20px;
+}
+
+.stars {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
+
+.stars input[type="radio"] {
+    display: none;
+}
+
+.stars label {
+    color: #ccc;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.stars label:hover,
+.stars label:hover ~ label,
+.stars input[type="radio"]:checked ~ label {
+    color: gold;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+}
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequently Asked Questions</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    
+    
+    <div class="faq-container">
+        <header class="faq-header">
+            <h1>Frequently Asked Questions</h1>
+            <div class="search-bar">
+                <input type="text" id="search" placeholder="What do you need help with?">
+            </div>
+        </header>
+
+        <section class="faq-content">
+            <h2>Users Are Always Asking From Us ...</h2>
+            <?php include 'faq.php'; ?>
+            <div class="faq-sections">
+                <div class="faq-column">
+                    <div class="faq-item">
+                        <h3>01 General Questions :</h3>
+                        <p>Some general questions and answers...</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>02 Job Search :</h3>
+                        <p>Information about job searching...</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>03 Application Process :</h3>
+                        <p>Details about applying for jobs...</p>
+                    </div>
+                </div>
+
+                <div class="faq-column">
+                    <div class="faq-item">
+                        <h3>04 Profile Management :</h3>
+                        <p>Help with managing user profiles...</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>05 Payment & Billing :</h3>
+                        <p>Information about payment and billing...</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>06 Technical Support :</h3>
+                        <p>Guidance on technical issues...</p>
+                    </div>
+                </div>
+            </div>
+            <?php echo generate_faq(); ?>   
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

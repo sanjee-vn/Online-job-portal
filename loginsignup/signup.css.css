@@ -1,0 +1,255 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.form-container {
+    background-color: white;
+    width: 450px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="password"],
+.form-container input[type="tel"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.form-container input[type="radio"] {
+    margin-right: 5px;
+}
+
+.form-container label {
+    margin-right: 15px;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.form-container button:hover {
+    background-color: #45a049;
+}
+
+.form-container button[type="button"] {
+    background-color: #db4437;
+    margin-top: 5px;
+}
+
+.form-container button[type="button"]:hover {
+    background-color: #c33d2d;
+}
+
+/* Styling the header - fixed at the top */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 15px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+}
+
+/* Add padding-top to prevent overlap with the header */
+body {
+    padding-top: 80px; /* Adjusted for better spacing */
+}
+
+/* Styling the logo */
+.logo h1 {
+    font-size: 26px;
+    font-weight: bold;
+    margin: 0;
+    color: #f4f4f4;
+}
+
+/* Styling the navigation menu */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #e0e0e0;
+    text-decoration: underline;
+}
+
+/* Styling the auth-links section */
+.auth-links {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* Styling the dropdown button */
+.dropbtn {
+    background-color: #444;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+/* Dropdown content links */
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Style the dropdown button when hovered */
+.dropdown:hover .dropbtn {
+    background-color: #555;
+}
+
+
+/*footer bottom*/
+
+/* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set the body and html to take up the full height */
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main content area */
+.content {
+    flex: 1; /* This ensures the content area grows and pushes the footer down */
+    padding: 20px; /* Add padding to the content area */
+}
+
+
+/* Footer container styles */
+footer {
+    background-color: #2d2626; /* Dark background */
+    color: #fff; /* White text */
+    padding: 20px 0; /* Padding for top and bottom */
+    font-family: Arial, sans-serif; /* Font style */
+}
+
+/* Footer container */
+.footer-container {
+    max-width: 1200px; /* Max width */
+    margin: 0 auto; /* Center the footer */
+    padding: 0 20px; /* Padding for sides */
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Column layout */
+    align-items: center; /* Center items horizontally */
+}
+
+/* Footer links */
+.footer-links {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Flexbox for horizontal layout */
+    gap: 20px; /* Spacing between links */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+.footer-links li {
+    display: inline; /* Inline elements */
+}
+
+.footer-links a {
+    text-decoration: none; /* Remove underline */
+    color: #fff; /* White text */
+    font-size: 16px; /* Font size */
+}
+
+.footer-links a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Footer bottom section */
+.footer-bottom {
+    text-align: center; /* Center text */
+    margin-top: 10px; /* Spacing from links */
+    font-size: 14px; /* Font size for copyright */
+}

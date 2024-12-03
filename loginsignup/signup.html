@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="signup.css.css">
+	<script src="js/signin.js"></script>
+	<title> JobNexus </title>
+</head>
+<body>
+	<header>
+        <div class="logo">
+            <h1>Job Nexus</h1>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="http://localhost/online%20job%20portal/index.php">Home</a></li>
+                <li><a href="http://localhost/online%20job%20portal/job-portal-project/php/job-listing.php">Job Lists</a></li>
+                <li><a href="http://localhost/online%20job%20portal/aboutus.php">About Us</a></li>
+                <li><a href="http://localhost/online%20job%20portal/contactus.php">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="auth-links">
+            <div class="dropdown">
+                <button class="dropbtn">Login / Signup</button>
+                <div class="dropdown-content">
+                    <a href="http://localhost/online%20job%20portal/loginsignup/login.html">Login</a>
+                    <a href="http://localhost/online%20job%20portal/loginsignup/signup.html">Signup</a>
+                    <a href="http://localhost/online%20job%20portal/profile.php">User Profile</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+	<div class="container">
+	<h1> Welcome! </h1>
+	<h2> Sign up </h2>
+	<br>
+		<div class="form-container">
+			<form id="registerForm" method="post" action="signup_process.php">
+				<input type="text" placeholder="Enter your first name" name="firstname" >
+				<input type="text" placeholder="Enter your last name" name="lastname" >
+				<input type="email" placeholder="Enter your email" name="email" >
+				<input type="tel" placeholder="Enter your number" name="phonenumber" >
+				<input type="password" placeholder="Creat a password" name="password" >
+				
+				<div>
+					<b> Who are you? </b>
+					<input type="radio" id="userTypeUser" name="account_type" value="user" >
+					<label for="user">User </label>
+					<input type="radio" id="userTypeEmployer" name="account_type" value="employer" >
+					<label for="employer">Employer </label><br><br>
+					<input type="checkbox" id="terms">
+					<label for="accept"> I accept the terms and conditions </label>
+				</div>
+				
+				<button type="submit">Sign up</button>
+			</form>
+		</div>
+	</div>
+	<script src="js/signup.js" defer></script>
+	<br>
+	 <!-- Footer Section -->
+	 <footer>
+        <div class="footer-container">
+            <ul class="footer-links">
+                <li><a href="http://localhost/online%20job%20portal/FAQ/faq.html">FAQs</a></li>
+                <li><a href="http://localhost/online%20job%20portal/aboutus.php">About Us</a></li>
+                <li><a href="http://localhost/online%20job%20portal/termsandcondition.php">Terms and Conditions</a></li>
+                <li><a href="http://localhost/online%20job%20portal/contactus.php">Contact Us</a></li>
+            </ul>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Job Nexus. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

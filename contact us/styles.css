@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background: url(back.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.two{
+    text-align: center;
+   margin-top: 80px;
+}
+.container{
+    margin-top: -40px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container .five{
+    background-color:rgba(181, 159, 159, 0.327);
+    border: 2px solid black;
+    border-radius: 4px;
+    width: 350px;
+    height: 400px;
+    padding: 20px 40px;
+}
+
+
+.container .five .four{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+.container .contactinfo{
+    border: 2px solid black;
+    padding: 20px 15px;
+    width: 320px;
+    height: 200px;
+    border-radius: 4px;
+
+}
+
+.container .contactinfo .contact1 div{
+    padding: 5px 3px ;
+
+}
+.contactinfo{
+
+   background-color: rgba(181, 159, 159, 0.327);
+
+}
+.container .contactinfo .contact{
+    margin-bottom: 4px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    resize: none;
+}
+input:focus, textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+
+button{
+    width: 30%;
+    padding: 12px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+.four .form{
+    padding: 5px 3px ;
+    
+    
+    
+}
+
+
+.five{
+    
+    
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

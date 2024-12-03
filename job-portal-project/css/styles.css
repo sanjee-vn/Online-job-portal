@@ -1,0 +1,437 @@
+/* Styling the header - fixed at the top */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 15px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Add padding-top to prevent overlap with the header */
+body {
+    padding-top: 70px; /* Adjust this to match the height of your header */
+}
+
+/* Styling the logo */
+.logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Styling the navigation menu */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Styling the auth-links section */
+.auth-links {
+    position: relative;
+}
+
+/* Styling the dropdown button */
+.dropbtn {
+    background-color: #444;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Dropdown content links */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Style the dropdown button when hovered */
+.dropdown:hover .dropbtn {
+    background-color: #555;
+}
+
+/* Job Details Section */
+#job-details {
+    background-color: #f7f1e3; /* Light background for contrast */
+    border-radius: 10px; /* Rounded corners for the section */
+    padding: 20px; /* Padding for internal spacing */
+    max-width: 600px; /* Maximum width of the section */
+    margin: 20px auto; /* Center the section horizontally */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    font-family: Arial, sans-serif; /* Font style */
+}
+
+/* Title styling */
+#job-details h2 {
+    color: #5c4a3a; /* Dark brown color for the title */
+    font-size: 24px; /* Title font size */
+    margin-bottom: 15px; /* Spacing below the title */
+}
+
+/* Paragraph styling */
+#job-details p {
+    color: #3b2c2c; /* Medium brown color for text */
+    font-size: 16px; /* Text font size */
+    margin: 10px 0; /* Spacing between paragraphs */
+}
+
+/* Application Form styling */
+#job-details form {
+    margin-top: 20px; /* Spacing above the form */
+}
+
+/* Input styling */
+#job-details input[type="file"],
+#job-details input[type="hidden"],
+#job-details button {
+    padding: 10px; /* Padding for better clickability */
+    border-radius: 5px; /* Rounded corners for inputs and buttons */
+    border: 1px solid #5c4a3a; /* Border color */
+    background-color: #e9d8d2; /* Light brown background */
+    font-size: 16px; /* Font size */
+    color: #3b2c2c; /* Text color */
+}
+
+/* Button styling */
+#job-details button {
+    background-color: #5c4a3a; /* Dark brown for button background */
+    color: white; /* White text for buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth background change */
+}
+
+/* Button hover effect */
+#job-details button:hover {
+    background-color: #7f6b58; /* Lighter brown on hover */
+}
+
+/* Job Form Section */
+#job-form {
+    background-color: #f7f1e3; /* Light background for contrast */
+    border-radius: 10px; /* Rounded corners for the section */
+    padding: 20px; /* Padding for internal spacing */
+    max-width: 600px; /* Maximum width of the section */
+    margin: 20px auto; /* Center the section horizontally */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    font-family: Arial, sans-serif; /* Font style */
+}
+
+/* Title styling */
+#job-form h2 {
+    color: #5c4a3a; /* Dark brown color for the title */
+    font-size: 24px; /* Title font size */
+    margin-bottom: 15px; /* Spacing below the title */
+}
+
+/* Label styling */
+#job-form label {
+    display: block; /* Block display for labels */
+    margin-bottom: 5px; /* Spacing below labels */
+    color: #3b2c2c; /* Medium brown color for labels */
+    font-weight: bold; /* Bold font for labels */
+}
+
+/* Input and Textarea styling */
+#job-form input[type="text"],
+#job-form textarea {
+    width: 100%; /* Full width inputs */
+    padding: 10px; /* Padding for better usability */
+    border-radius: 5px; /* Rounded corners for inputs */
+    border: 1px solid #5c4a3a; /* Border color */
+    background-color: #e9d8d2; /* Light brown background */
+    font-size: 16px; /* Font size */
+    color: #3b2c2c; /* Text color */
+    margin-bottom: 15px; /* Spacing below inputs */
+}
+
+/* Button styling */
+#job-form button {
+    padding: 10px; /* Padding for buttons */
+    border-radius: 5px; /* Rounded corners for buttons */
+    border: none; /* Remove default border */
+    background-color: #5c4a3a; /* Dark brown for button background */
+    color: white; /* White text for buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth background change */
+}
+
+/* Button hover effect */
+#job-form button:hover {
+    background-color: #7f6b58; /* Lighter brown on hover */
+}
+
+/* Confirmation dialog styling */
+#job-form button[type="submit"][name="delete"] {
+    background-color: #d9534f; /* Red color for delete button */
+}
+
+#job-form button[type="submit"][name="delete"]:hover {
+    background-color: #c9302c; /* Darker red on hover */
+}
+
+/* Add Job Section */
+#add-job {
+    background-color: #f7f1e3; /* Light brown background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Internal padding */
+    max-width: 500px; /* Maximum width of the section */
+    margin: 20px auto; /* Center the section */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    font-family: Arial, sans-serif; /* Font style */
+    text-align: center; /* Center text */
+}
+
+/* Heading Style */
+#add-job h2 {
+    color: #5c4a3a; /* Dark brown for the heading */
+    font-size: 24px; /* Font size for heading */
+    margin-bottom: 15px; /* Spacing below the heading */
+}
+
+/* Form Label Style */
+#add-job label {
+    display: block; /* Block elements for proper spacing */
+    color: #3b2c2c; /* Medium brown color for labels */
+    margin: 10px 0 5px; /* Spacing for labels */
+    font-size: 16px; /* Font size for labels */
+}
+
+/* Input Field Style */
+#add-job input[type="text"] {
+    width: 100%; /* Full width input */
+    padding: 10px; /* Padding inside input */
+    border: 1px solid #bfbfbf; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 15px; /* Spacing below input */
+    font-size: 14px; /* Font size for input */
+}
+
+/* Button Style */
+#add-job button {
+    background-color: #5c4a3a; /* Dark brown background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding for button */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth background change */
+}
+
+/* Button Hover Effect */
+#add-job button:hover {
+    background-color: #7f6b58; /* Lighter brown on hover */
+}
+ 
+/* Toggle Button Style */
+#toggle-form-button {
+    background-color: #5c4a3a; /* Dark brown background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding for button */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size for button text */
+    transition: background-color 0.3s; /* Smooth background change */
+    display: block; /* Make it a block element */
+    margin: 20px auto; /* Center the button */
+}
+
+/* Button Hover Effect */
+#toggle-form-button:hover {
+    background-color: #7f6b58; /* Lighter brown on hover */
+}
+
+/* Centering the button in its container */
+.button-container {
+    text-align: center; /* Center the button in the container */
+}
+
+/* Section styling */
+section {
+    max-width: 800px; /* Max width for the section */
+    margin: 0 auto; /* Center the section */
+    padding: 20px; /* Padding around the section */
+    text-align: center; /* Center align text in the section */
+}
+
+/* Search Form styling */
+#search-form {
+    display: flex; /* Flexbox for form layout */
+    flex-direction: column; /* Stack inputs vertically */
+    gap: 10px; /* Space between inputs */
+    margin-bottom: 20px; /* Space below the form */
+}
+
+/* Input fields styling */
+#search-form input {
+    padding: 10px; /* Padding inside the input */
+    border: 1px solid #7c6a57; /* Light brown border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size for inputs */
+}
+
+/* Button styling for filter */
+#search-form button {
+    background-color: #5c4a3a; /* Dark brown background */
+    color: white; /* White text */
+    padding: 10px; /* Padding for button */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size for button text */
+    transition: background-color 0.3s; /* Smooth background change */
+}
+
+/* Button hover effect */
+#search-form button:hover {
+    background-color: #7f6b58; /* Lighter brown on hover */
+}
+
+/* Job card styling */
+.job-cards {
+    display: flex; /* Flexbox for job cards */
+    flex-wrap: wrap; /* Wrap cards to new line if needed */
+    justify-content: center; /* Center the cards */
+    gap: 20px; /* Space between job cards */
+}
+
+/* Individual job card styling */
+.job-card {
+    background-color: #f3e7d1; /* Light brown background for cards */
+    padding: 20px; /* Padding inside job cards */
+    border: 1px solid #7c6a57; /* Light brown border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    text-align: left; /* Align text to the left */
+    width: 300px; /* Fixed width for job cards */
+}
+
+/* Job card heading */
+.job-card h3 {
+    margin: 0 0 10px; /* Margin for heading */
+}
+
+/* Job card links */
+.job-card a {
+    text-decoration: none; /* Remove underline */
+    color: #5c4a3a; /* Dark brown color for links */
+    font-weight: bold; /* Bold text for links */
+}
+
+/* Job card link hover effect */
+.job-card a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+
+
+/*footer bottom*/
+
+/* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set the body and html to take up the full height */
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main content area */
+.content {
+    flex: 1; /* This ensures the content area grows and pushes the footer down */
+    padding: 20px; /* Add padding to the content area */
+}
+
+
+/* Footer container styles */
+footer {
+    background-color: #2d2626; /* Dark background */
+    color: #fff; /* White text */
+    padding: 20px 0; /* Padding for top and bottom */
+    font-family: Arial, sans-serif; /* Font style */
+}
+
+/* Footer container */
+.footer-container {
+    max-width: 1200px; /* Max width */
+    margin: 0 auto; /* Center the footer */
+    padding: 0 20px; /* Padding for sides */
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Column layout */
+    align-items: center; /* Center items horizontally */
+}
+
+/* Footer links */
+.footer-links {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Flexbox for horizontal layout */
+    gap: 20px; /* Spacing between links */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+.footer-links li {
+    display: inline; /* Inline elements */
+}
+
+.footer-links a {
+    text-decoration: none; /* Remove underline */
+    color: #fff; /* White text */
+    font-size: 16px; /* Font size */
+}
+
+.footer-links a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Footer bottom section */
+.footer-bottom {
+    text-align: center; /* Center text */
+    margin-top: 10px; /* Spacing from links */
+    font-size: 14px; /* Font size for copyright */
+}

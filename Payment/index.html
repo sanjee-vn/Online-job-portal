@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="navigation">
+        <!-- Add navigation buttons for CRUD operations -->
+        <a href="read.php" class="nav-btn">View Records</a>
+        <a href="update.php" class="nav-btn">Update Record</a>
+        <a href="delete.php" class="nav-btn">Delete Record</a>
+    </div>
+
+    <div class="payment-container">
+        <form action="index.php" method="post">
+            <h2>Payment Details</h2>
+
+            <div class="payment-options">
+                <label>Payment Options</label>
+                <select id="paymentOption" name="payment_option" required>
+                    <option value="select">Select</option>
+                    <option value="mastercard">Mastercard</option>
+                    <option value="visa">Visa</option>
+                </select>
+            </div>
+
+            <p class="safe-message">Your payment information is safe with us <span>✔</span></p>
+
+            <div class="card-details">
+                <label for="newCard">Add a New Card</label>
+
+                <input type="text" maxlength="16" minlength="16" name="cardNumber" id="cardNumber" placeholder="Card Number" required>
+                <input type="text" id="cardHolder" name="cardholdername" placeholder="Cardholder Name" required>
+
+                <div class="expiry-cvv">
+                    <input type="text" maxlength="5" name="expiredate" id="expiryDate" placeholder="MM/YY" required>
+                    <input type="number" name="cvv" id="cvv" placeholder="CVV" required>
+                </div>
+
+                <div class="save-card-toggle">
+                    <label>Save card details</label>
+                    <input type="checkbox" id="saveCardToggle" checked>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button type="reset" id="cancelBtn">Cancel</button>
+                <button type="submit" id="payBtn" onclick="Pay()">Pay</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
